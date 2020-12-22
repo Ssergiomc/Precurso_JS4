@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+         * Escribe un programa que recupere una subcadena de un string en otra variable usando una función.
+         */
+        let initString, cutString;
+        initString = prompt("Escribe una frase, te devolveré de la posición 6 a la 11");// posición 6, caracter 5 en la cadena empieza desde 0, caracter 11 no incluido
+        cutString = initString.substring(5, 11);
+        console.log(cutString);
+        /*
+        El método substring devuelve una cadena de texto, al método substring le hemos
+        indicado que queremos recuperar una subcadena partiendo de la cadena 'initString',
+        y que dicha subcadena debía contener los caracteres desde el 5 al 10 (posición 4 
+        en la cadena - 0 al 4, 5º caracter del string 'initString') y coger 5 caracteres. 
+        Esta nueva subcadena se almacena en la variable 'cutString'.
+        */
+    </script>
+</body>
+
+</html>

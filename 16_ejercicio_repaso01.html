@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+         * Escribe un programa que dada una palabra en minúsculas, muestre en la consola la mitad de la palabra en minúsculas y la otra mitad en mayúsculas.
+         * Pistas:
+         * 1. Debes utilizar al menos 3 métodos de los vistos anteriormente
+         * 2. La mitad de una palabra contiene mitad de sus caracteres, para ello necesitarás saber cuantos caracteres tiene la palabra
+         * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
+         * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
+         */
+
+        let userWord, wordLength, subsWordinit, subsWordend;
+        userWord = prompt("Escribe una palabra (se mostrará la mitad en mayúsculas y la otra en minúsculas");
+        wordLength = userWord.length; // medir long de la palabra inicial
+        subsWordinit = userWord.substring(0, wordLength/2); // dividir en 2 substrings, substring1 de 0 a la mitad de la palabra inicial
+        subsWordinit = subsWordinit.toUpperCase(); // substring1 convertir en mayusculas
+        subsWordend = userWord.substring(wordLength/2); // subtring2 de la mitad al final de la palabra inicial
+        subsWordend = subsWordend.toLowerCase(); // substring2 convertir en minusculas
+        console.log(subsWordinit + subsWordend); // mostrar en consola la suma de ambos
+    </script>
+</body>
+
+</html>
